@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="f5db84e4-8c6a-4f28-98fb-e13c5d70658c" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>DeployWorkers</name>
+  <description />
+  <settings ref="TheBallPlatform_DeployWorkersTemplate">
+    <build-runners order="RUNNER_3" />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+

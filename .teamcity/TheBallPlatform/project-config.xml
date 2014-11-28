@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="2c2fdbf6-bb99-4937-9e75-3f0a865c12b3" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>TheBallPlatform</name>
+  <parameters>
+    <param name="env.AmazonSESAccessInfo" value="" spec="password display='normal'" />
+    <param name="env.AzureConfigurationName" value="" />
+    <param name="env.HTTPSCertificate2Thumbprint" value="0000000000000000000000000000000000000000" />
+    <param name="env.HTTPSCertificate3Thumbprint" value="0000000000000000000000000000000000000000" />
+    <param name="env.HTTPSCertificate4Thumbprint" value="0000000000000000000000000000000000000000" />
+    <param name="env.HTTPSCertificate5Thumbprint" value="0000000000000000000000000000000000000000" />
+    <param name="env.HTTPSCertificateThumbprint" value="0000000000000000000000000000000000000000" />
+    <param name="env.RDPCertificateThumbprint" value="" />
+    <param name="env.RDPEncryptedPassword" value="" />
+    <param name="env.RDPPassword" value="" spec="password display='normal'" />
+    <param name="env.RDPUserName" value="" />
+    <param name="env.StorageAccountKey" value="" spec="password display='normal'" />
+    <param name="env.StorageAccountName" value="" />
+    <param name="env.WorkerRoleActiveContainerNames" value="" />
+  </parameters>
+  <cleanup />
+</project>
+

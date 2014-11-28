@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="9f60b09e-98c0-457f-92b2-e2c89153272c" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>DeployWebInterface</name>
+  <description />
+  <settings ref="TheBallPlatform_DeployWebInterfaceTemplate">
+    <parameters>
+      <param name="DeploymentHostName" value="" />
+      <param name="IISAppName" value="" />
+      <param name="InstanceName" value="" />
+    </parameters>
+    <build-runners order="RUNNER_5, RUNNER_12, RUNNER_8, RUNNER_4" />
+    <vcs-settings />
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="79df1e96-e075-4e66-ad22-830cb18dfbc6" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>DeployWorkersTemplate</name>
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_3" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="call TCUpdateWorkers.cmd" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="TheBallPlatform_HttpsGithubComAbstractiondevTheBallPlatformRefsHeadsMaster" />
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <dependencies>
+      <depend-on sourceBuildTypeId="TheBallPlatform_PlatformBinaries">
+        <options>
+          <option name="run-build-on-the-same-agent" value="true" />
+          <option name="take-started-build-with-same-revisions" value="true" />
+          <option name="take-successful-builds-only" value="true" />
+        </options>
+      </depend-on>
+    </dependencies>
+    <cleanup />
+  </settings>
+</template>
+

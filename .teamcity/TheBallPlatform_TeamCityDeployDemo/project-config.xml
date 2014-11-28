@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="TheBallPlatform" uuid="8c19d694-b360-4775-a237-ed5c32f2dc77" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>TeamCityDeployDemo</name>
+  <parameters>
+    <param name="env.AzureConfigurationName" value="TheBallTeamCityDeployDemo" />
+    <param name="env.HTTPSCertificate2Thumbprint" value="" />
+    <param name="env.HTTPSCertificate3Thumbprint" value="" />
+    <param name="env.HTTPSCertificate4Thumbprint" value="" />
+    <param name="env.HTTPSCertificate5Thumbprint" value="" />
+    <param name="env.HTTPSCertificateThumbprint" value="" />
+    <param name="env.RDPCertificateThumbprint" value="" />
+    <param name="env.RDPEncryptedPassword" value="" />
+    <param name="env.RDPPassword" value="" />
+    <param name="env.RDPUserName" value="" />
+    <param name="env.StorageAccountKey" value="" />
+    <param name="env.StorageAccountName" value="" />
+    <param name="env.WorkerRoleActiveContainerNames" value="" />
+  </parameters>
+  <cleanup />
+</project>
+

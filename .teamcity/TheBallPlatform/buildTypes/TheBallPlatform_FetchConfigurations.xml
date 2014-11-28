@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="d065bb27-551d-403b-9eb9-855f5706a848" xsi:noNamespaceSchemaLocation="http://www.jetbrains.com/teamcity/schemas/9.0/project-config.xsd">
+  <name>FetchConfigurations</name>
+  <description />
+  <settings>
+    <parameters />
+    <build-runners>
+      <runner id="RUNNER_13" name="FetchConfigs to SecureParts" type="simpleRunner">
+        <parameters>
+          <param name="script.content"><![CDATA[rmdir /s /q c:\SecureParts\Configs
+XCOPY Configs C:\SecureParts\Configs\ /E /D /C /Y]]></param>
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
+    </build-runners>
+    <vcs-settings>
+      <vcs-entry-ref root-id="TheBallPlatform_HttpsGithubComKallexTheBallTCConfig">
+        <checkout-rule rule="+:Configs" />
+      </vcs-entry-ref>
+    </vcs-settings>
+    <requirements />
+    <build-triggers />
+    <cleanup />
+  </settings>
+</build-type>
+
